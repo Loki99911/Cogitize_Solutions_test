@@ -1,0 +1,15 @@
+$primary-bg-color: #292930;
+$secondary-bg-color: #303038;
+$primary-accent-color: #6764f1;
+$secondary-accent-color: #efb62b;
+$primary-text-color: #F5F5F5;
+$secondary-text-color: #6B6B7B;
+
+:export {
+  primaryBgColor: $primary-bg-color;
+  secondaryBgColor: $secondary-bg-color;
+  primaryAccentColor: $primary-accent-color;
+  secondaryAccentColor: $secondary-accent-color;
+  primaryTextColor: $primary-text-color;
+  secondaryTextColor: $secondary-text-color;
+}

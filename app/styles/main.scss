@@ -1,0 +1,30 @@
+@import './variables.module.scss';
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 2px solid rgba(245, 245, 245, 0.08);
+  background:
+    linear-gradient(
+      0deg,
+      rgba(38, 37, 52, 0.72) 0%,
+      rgba(38, 37, 52, 0.72) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.24) 0%,
+      rgba(255, 255, 255, 0.24) 100%
+    ),
+    url('../../public/bg.jpg'),
+    lightgray 0% 0% / 1.9999999552965164px 1.9999999552965164px repeat;
+}
+.main-window {
+  padding-top: 24px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  background-color: $primary-bg-color;
+}

@@ -1,0 +1,36 @@
+@import './variables.module.scss';
+.nav-list {
+  position: relative;
+  display: flex;
+}
+.nav-text {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 254px;
+  height: 48px;
+  border-radius: 8px 8px 0px 0px;
+  border-top: 2px solid rgba(245, 245, 245, 0.08);
+  border-left: 2px solid rgba(245, 245, 245, 0.08);
+  border-right: 2px solid rgba(245, 245, 245, 0.08);
+  background: $primary-bg-color;
+  color: $secondary-text-color;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+    width: 254px;
+    height: 2px;
+    background: rgba(245, 245, 245, 0.08);
+  }
+  &.active::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background: transparent;
+  }
+}
+.nav-item {
+  position: relative;
+}
