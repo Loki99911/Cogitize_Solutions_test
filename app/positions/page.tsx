@@ -1,5 +1,20 @@
-import Link from 'next/link';
+'use client';
+import { useState } from 'react';
+import '../styles/positions.scss';
+import { PositionsList } from '../ui/positionsList/PositionsList';
+import { Position } from '../types/positions';
+import { PositionDescription } from '../ui/positionDescription/PositionDescription';
 
 export default function Page() {
-  return <main className="flex min-h-screen flex-col p-6">personList</main>;
+  const [positions, setPositions] = useState<Position[] | []>([]);
+  const currentPosition = positions.find(({ isActive }) => isActive) ?? null;
+  return (
+    <div className="positionsPage-wrapper">
+      <PositionsList positions={positions} setPositions={setPositions} />
+      <PositionDescription
+        position={currentPosition}
+        setPositions={setPositions}
+      />
+    </div>
+  );
 }

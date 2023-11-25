@@ -1,0 +1,42 @@
+@import './variables.module.scss';
+.positionsPage-wrapper {
+  display: flex;
+  border-radius: 0px 0px 8px 8px;
+  border-right: 2px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+  border-left: 2px solid rgba(255, 255, 255, 0.08);
+  width: 984px;
+  height: 747px;
+  padding: 24px 40px 40px 40px;
+  gap: 16px;
+}
+.positions-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 16px;
+  min-width: 296px;
+}
+.position-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 592px;
+  border-radius: 8px;
+  background: $secondary-bg-color;
+}
+.positions-list {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 8px;
+}
+.positions-card {
+  width: 296px;
+  height: 80px;
+  border-radius: 8px;
+  background: $secondary-bg-color;
+  border: 2px solid transparent;
+  &.active {
+    border: 2px solid $primary-accent-color;
+  }
+}
