@@ -1,3 +1,4 @@
+
 import React from 'react';
 import '../../styles/positions.scss';
 import { PositionsListProps } from '../../types/positions';

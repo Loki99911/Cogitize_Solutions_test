@@ -1,7 +1,7 @@
 import { CheckboxStates } from '../../types/positions';
 import React, { useState } from 'react';
 import '../../styles/checkbox.scss';
-import {CheckboxItem} from '../checkboxItem/checkboxItem';
+import { CheckboxItem } from '../checkboxItem/CheckboxItem';
 
 
 export const CheckboxBlock: React.FC = () => {

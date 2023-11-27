@@ -17,19 +17,18 @@ export const PositionDescription: React.FC<PositionDescriptionProps> = ({
   };
   return (
     <div className="position-wrapper">
-      <form action=""></form>
-      <label htmlFor="title">Название:</label>
-      <input
-        type="text"
-        id="title"
-        name="title"
-        value={title}
-        onChange={handleTitleChange}
-      />
-      <CheckboxBlock/>
-      <p>{position?.title}</p>
-      <p>{position?.isActive}</p>
-      <button onClick={savePosition}>Сохранить</button>
+      <form onSubmit={savePosition}>
+        <label htmlFor="title">Название:</label>
+        <input
+          type="text"
+          id="title"
+          name="title"
+          value={title}
+          onChange={handleTitleChange}
+        />
+        <CheckboxBlock />
+        <button>Сохранить</button>
+      </form>
     </div>
   );
 };
