@@ -13,7 +13,7 @@ export const PositionDescription: React.FC<PositionDescriptionProps> = ({
     setTitle(e.target.value);
   };
   const savePosition = () => {
-    setPositions(prev=>[]);
+    setPositions(prev=>[ ]);
   };
   return (
     <div className="position-wrapper">
