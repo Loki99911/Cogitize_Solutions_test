@@ -24,3 +24,7 @@ export interface CheckboxStates {
     [checkbox: string]: boolean;
   };
 }
+
+export interface ConnectionToDB {
+  isConnected: boolean;
+}
